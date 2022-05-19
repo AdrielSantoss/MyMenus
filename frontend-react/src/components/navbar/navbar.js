@@ -56,7 +56,7 @@ const NavBar = () => {
                                 <Link to={`/sign`}><strong>Sign up</strong></Link>
                                 </a>
                                 <a className="button is-light">
-                                    <Link to={`/login`}>Log in</Link>
+                                    <Link to={`/login`}><strong>Log in</strong></Link>
                                 </a>
                             </div>
                         </div>
