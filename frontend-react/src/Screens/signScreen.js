@@ -4,9 +4,9 @@ import './style/sign.css'
 const SignPage = () => {
     return (
         <Fragment>
-            <section id='containerSign'>
+            <div id='containerSign'>
                 <div className="field">
-                    <label className="label">Username</label>
+                    <label className="label has-text-black">Username</label>
                     <div className="control has-icons-left has-icons-right">
                         <input className="input is-success" type="text" placeholder="Username" />
                         <span className="icon is-small is-left">
@@ -19,7 +19,7 @@ const SignPage = () => {
                 </div>
 
                 <div className="field">
-                    <label className="label">Email</label>
+                    <label className="label has-text-black">Email</label>
                     <div className="control has-icons-left has-icons-right">
                         <input className="input is-dark" type="email" placeholder="Email" />
                         <span className="icon is-small is-left">
@@ -29,7 +29,7 @@ const SignPage = () => {
                 </div>
 
                 <div className="field">
-                    <label className="label">Password</label>
+                    <label className="label has-text-black">Password</label>
                     <div className="control has-icons-left has-icons-right">
                         <input className="input" type="password" placeholder="Password" />
                         <span className="icon is-small is-left">
@@ -40,19 +40,19 @@ const SignPage = () => {
 
                 <div className="field">
                     <div className="control">
-                        <label className="checkbox">
-                            <input type="checkbox" />
-                            I agree to the <a href="#">terms and conditions</a>
+                        <label className="checkbox has-text-black">
+                            <input type="checkbox" id="checkbox"/>
+                            I agree to the <a href="#"><strong className="has-text-blue">terms and conditions</strong></a>
                         </label>
                     </div>
                 </div>
 
                 <div className="field is-grouped">
                     <div className="control">
-                        <button className="button is-link">Submit</button>
+                        <button className="button is-link">Sign</button>
                     </div>
                 </div>
-            </section>
+            </div>
         </Fragment>
     )
 }
