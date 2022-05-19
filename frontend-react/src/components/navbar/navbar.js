@@ -1,14 +1,13 @@
 import React, { Fragment } from 'react'
 import {Link} from 'react-router-dom'
 
-
 const NavBar = () => {
     return (
         <Fragment>
-            <nav className="navbar" role="navigation" aria-label="main navigation">
+            <nav className="navbar has-background-grey-light" role="navigation" aria-label="main navigation">
                 <div className="navbar-brand">
                     <a className="navbar-item" href="https://bulma.io">
-                        <h1 className="title">MyMenus</h1>
+                        <img src="img" alt='logo' width="112" height="28"/>
                     </a>
 
                     <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -53,10 +52,10 @@ const NavBar = () => {
                         <div className="navbar-item">
                             <div className="buttons">
                                 <a className="button is-primary">
-                                <Link to={`/sign`}><strong>Sign up</strong></Link>
+                                <Link to={`/sign`}><strong className="has-text-black">Sign up</strong></Link>
                                 </a>
                                 <a className="button is-light">
-                                    <Link to={`/login`}><strong>Log in</strong></Link>
+                                    <Link to={`/login`}><strong className="has-text-black">Log in</strong></Link>
                                 </a>
                             </div>
                         </div>
