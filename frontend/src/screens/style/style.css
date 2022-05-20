@@ -1,0 +1,15 @@
+#error {
+  text-align: center;
+  font-weight: bold;
+}
+
+#error404 {
+  width: 600px;
+  position: relative;
+  margin-top: 100px;
+  left: 28%;
+}
+
+body {
+  background-image: none;
+}
