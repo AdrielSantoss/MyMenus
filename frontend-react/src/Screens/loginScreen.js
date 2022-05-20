@@ -1,12 +1,11 @@
 import React, {Fragment} from 'react'
-import "./style/login.css"
-const loginPage = () => {
-    
+import './style/login.css'
 
-    return (
+const loginPage = () => {
+  return (
         <Fragment>
             <form>
-                <div id='containerLogin'>
+                <div id="containerLogin">
                     <div className="field">
                         <label className="label has-text-black">Username</label>
                         <div className="control has-icons-left has-icons-right">
@@ -19,7 +18,6 @@ const loginPage = () => {
                             </span>
                         </div>
                     </div>
-
                     <div className="field">
                         <label className="label has-text-black">Password</label>
                         <div className="control has-icons-left has-icons-right">
@@ -35,6 +33,7 @@ const loginPage = () => {
                                 Login
                             </button>
                         </p>
+                        <p className="has-text-black">Forgot Password?</p>
                     </div>
                 </div>
             </form>

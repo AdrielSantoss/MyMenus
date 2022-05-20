@@ -5,7 +5,7 @@ const SignPage = () => {
     return (
         <Fragment>
             <form>
-                <div id='containerSign'>
+                <div id="containerSign">
                     <div className="field">
                         <label className="label has-text-black">Username</label>
                         <div className="control has-icons-left has-icons-right">
@@ -18,7 +18,6 @@ const SignPage = () => {
                             </span>
                         </div>
                     </div>
-
                     <div className="field">
                         <label className="label has-text-black">Email</label>
                         <div className="control has-icons-left has-icons-right">
@@ -28,7 +27,6 @@ const SignPage = () => {
                             </span>
                         </div>
                     </div>
-
                     <div className="field">
                         <label className="label has-text-black">Password</label>
                         <div className="control has-icons-left has-icons-right">
@@ -38,7 +36,6 @@ const SignPage = () => {
                             </span>
                         </div>
                     </div>
-
                     <div className="field">
                         <div className="control">
                             <label className="checkbox has-text-black">
@@ -47,7 +44,6 @@ const SignPage = () => {
                             </label>
                         </div>
                     </div>
-
                     <div className="field is-grouped">
                         <div className="control">
                             <button className="button is-link">Sign</button>

@@ -1,7 +1,7 @@
 import React, {Fragment} from 'react'
 import NavBar from '../components/navbar/navbar'
 
-const PrincipalPage = () => {
+const MainPage = () => {
     return (
         <Fragment>
             <NavBar/>
@@ -9,4 +9,4 @@ const PrincipalPage = () => {
     )
 }
 
-export default PrincipalPage
+export default MainPage

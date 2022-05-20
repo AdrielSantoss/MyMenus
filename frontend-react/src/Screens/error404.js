@@ -1,10 +1,7 @@
 import React, {Fragment} from 'react'
 import './style/style.css'
 
-
-
 const Error404 = () => {
-    
     return (
         <Fragment>
            <div>
@@ -14,7 +11,6 @@ const Error404 = () => {
         </Fragment>
         
     )
-
 }
 
 export default Error404
