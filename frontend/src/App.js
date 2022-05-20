@@ -1,12 +1,11 @@
-import React, {Fragment} from 'react';
-import NavBar from './components/navbar/navbar'
+import React, { Fragment } from 'react';
 import RouterPages from './routes/routes';
 import './App.css';
 
 function App() {
   return (
     <Fragment>
-      <RouterPages/>
+      <RouterPages />
     </Fragment>
   );
 }
