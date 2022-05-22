@@ -1,6 +1,13 @@
 import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 
+const mobile = () => {
+  const desktop = document.getElementById('navbarDesktop');
+  const button = document.getElementById('burguerButton');
+  button.classList.toggle('is-active');
+  desktop.classList.toggle('is-active');
+};
+
 const NavBar = () => {
   return (
     <Fragment>
@@ -10,20 +17,14 @@ const NavBar = () => {
             <img src="img" alt="logo" width="112" height="28" />
           </a>
 
-          <a
-            role="button"
-            className="navbar-burger"
-            aria-label="menu"
-            aria-expanded="false"
-            data-target="navbarBasicExample"
-          >
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
+          <a role="button" id="burguerButton" class="navbar-burger" onClick={mobile}>
+            <span></span>
+            <span></span>
+            <span></span>
           </a>
         </div>
 
-        <div id="navbarBasicExample" className="navbar-menu">
+        <div className="navbar-menu" id="navbarDesktop">
           <div className="navbar-start">
             <a className="navbar-item">Home</a>
 
