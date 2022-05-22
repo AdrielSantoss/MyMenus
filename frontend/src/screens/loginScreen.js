@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import './style/login.css';
+
 const loginPage = () => {
   return (
     <Fragment>
@@ -31,11 +32,12 @@ const loginPage = () => {
             <p className="control ">
               <button className="button is-success">Login</button>
             </p>
+            <br />
             <Link to={'/forgotScreen'}>
               <p>Esqueci minha senha</p>
             </Link>
             <p>
-              Não tem conta? Faça seu cadastro <Link to={'/signScreen'}>Aqui!</Link>
+              Não tem conta? Faça seu cadastro <Link to={'/sign'}>Aqui!</Link>
             </p>
           </div>
         </div>
