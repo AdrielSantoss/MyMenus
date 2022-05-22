@@ -41,7 +41,7 @@ const SignPage = () => {
               <label className="checkbox has-text-black">
                 <input type="checkbox" id="checkbox" required />I agree to the
                 <a href="#">
-                  <strong className="has-text-blue">terms and conditions</strong>
+                  <strong className="has-text-blue"> terms and conditions</strong>
                 </a>
               </label>
             </div>
