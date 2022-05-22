@@ -30,7 +30,7 @@ const NavBar = () => {
 
             <a className="navbar-item">Itens</a>
 
-            <div className="navbar-item has-dropdown is-hoverable">
+            <div className="navbar-item has-dropdown is-hoverable is-hidden-mobile">
               <a className="navbar-link">More</a>
 
               <div className="navbar-dropdown">
