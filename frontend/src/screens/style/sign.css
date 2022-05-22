@@ -1,15 +1,16 @@
 #containerSign {
-    background-color: #fff;
-    background-size: 400px;
-    border-radius: 2%;
-    width: 350px;
-    margin: 0 auto;
-    margin-top: 10%;
-    display: grid;
-    place-items: center;
-    padding-bottom: 10px;
+  background-color: #fff;
+  background-size: 400px;
+  border-radius: 2%;
+  width: 350px;
+  margin: 0 auto;
+  margin-top: 10%;
+  display: grid;
+  place-items: center;
+  padding-bottom: 15px;
+  padding-top: 20px;
 }
 
 #checkbox {
-    margin-right: 10px;
+  margin-right: 10px;
 }
