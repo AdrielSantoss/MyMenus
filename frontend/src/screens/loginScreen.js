@@ -10,7 +10,7 @@ const loginPage = () => {
           <div className="field">
             <label className="label has-text-black">Username</label>
             <div className="control has-icons-left has-icons-right">
-              <input className="input is-success" type="text" placeholder="Username" />
+              <input className="input is-success" type="text" placeholder="Username" required />
               <span className="icon is-small is-left">
                 <i className="fas fa-user"></i>
               </span>
@@ -22,7 +22,7 @@ const loginPage = () => {
           <div className="field">
             <label className="label has-text-black">Password</label>
             <div className="control has-icons-left has-icons-right">
-              <input className="input" type="password" placeholder="Password" />
+              <input className="input" type="password" placeholder="Password" required />
               <span className="icon is-small is-left">
                 <i className="fas fa-eye"></i>
               </span>
@@ -33,7 +33,7 @@ const loginPage = () => {
               <button className="button is-success">Login</button>
             </p>
             <br />
-            <Link to={'/forgotScreen'}>
+            <Link to={'/forgotPassword'}>
               <p>Esqueci minha senha</p>
             </Link>
             <p>
