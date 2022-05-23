@@ -1,9 +1,29 @@
 import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
-import sign from '../config/signConfig';
 import './style/sign.css';
+import axios from 'axios';
 
 const SignPage = () => {
+  function sign(ev) {
+    ev.preventDefault();
+    const username = document.getElementById('username').value;
+    const userEmail = document.getElementById('email').value;
+    const userPassword = document.getElementById('password').value;
+
+    axios
+      .post('http://localhost:5000/api/users', {
+        name: username,
+        email: userEmail,
+        password: userPassword,
+        confirmPassword: userPassword
+      })
+      .then((resp) => sign('post', resp.data))
+      .catch((e) => {
+        e = 'erro ao cadastar!';
+        console.log(e);
+      });
+  }
+
   return (
     <Fragment>
       <form onSubmit={sign}>
@@ -11,7 +31,7 @@ const SignPage = () => {
           <div className="field">
             <label className="label has-text-black">Username</label>
             <div className="control has-icons-left has-icons-right">
-              <input className="input is-success" id="username" type="text" placeholder="Username" required />
+              <input className="input is-success" id="username" type="text" placeholder="Digite seu Nome" required />
               <span className="icon is-small is-left">
                 <i className="fas fa-user"></i>
               </span>
@@ -23,7 +43,7 @@ const SignPage = () => {
           <div className="field">
             <label className="label has-text-black">E-mail</label>
             <div className="control has-icons-left has-icons-right">
-              <input className="input is-dark" id="email" type="email" placeholder="Email" required />
+              <input className="input is-dark" id="email" type="email" placeholder="Digite seu E-mail" required />
               <span className="icon is-small is-left">
                 <i className="fas fa-envelope"></i>
               </span>
