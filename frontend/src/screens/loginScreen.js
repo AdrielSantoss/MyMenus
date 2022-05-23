@@ -28,18 +28,18 @@ const loginPage = () => {
               </span>
             </div>
           </div>
-          <div className="field">
-            <p className="control ">
-              <button className="button is-success">Login</button>
-            </p>
-            <br />
-            <Link to={'/forgotPassword'}>
-              <p>Esqueci minha senha</p>
-            </Link>
+          <br />
+          <div className="field has-text-centered">
             <p>
               Não tem conta? Faça seu cadastro <Link to={'/sign'}>Aqui!</Link>
             </p>
+            <Link to={'/forgotPassword'}>
+              <p>Esqueci minha senha</p>
+            </Link>
           </div>
+          <p className="control ">
+            <button className="button is-success">Entrar</button>
+          </p>
         </div>
       </form>
     </Fragment>
