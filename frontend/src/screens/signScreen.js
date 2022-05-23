@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import { Link } from 'react-router-dom';
 import sign from '../config/signConfig';
 import './style/sign.css';
 
@@ -46,10 +47,16 @@ const SignPage = () => {
                 </a>
               </label>
             </div>
+            <br />
+            <div className="field has-text-centered">
+              <p>
+                Já possui uma conta? <Link to={'/login'}>Clique Aqui!</Link>
+              </p>
+            </div>
           </div>
           <div className="field is-grouped">
             <div className="control">
-              <button className="button is-link">Sign</button>
+              <button className="button is-link">Criar conta</button>
             </div>
           </div>
         </div>
