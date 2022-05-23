@@ -21,7 +21,7 @@ const SignPage = () => {
             </div>
           </div>
           <div className="field">
-            <label className="label has-text-black">Email</label>
+            <label className="label has-text-black">E-mail</label>
             <div className="control has-icons-left has-icons-right">
               <input className="input is-dark" id="email" type="email" placeholder="Email" required />
               <span className="icon is-small is-left">
@@ -30,9 +30,18 @@ const SignPage = () => {
             </div>
           </div>
           <div className="field">
-            <label className="label has-text-black">Password</label>
+            <label className="label has-text-black">Senha</label>
             <div className="control has-icons-left has-icons-right">
-              <input className="input" id="password" type="password" placeholder="Password" required />
+              <input className="input" id="password" type="password" placeholder="Digite sua senha" required />
+              <span className="icon is-small is-left">
+                <i className="fas fa-eye"></i>
+              </span>
+            </div>
+          </div>
+          <div className="field">
+            <label className="label has-text-black">Confirme sua senha</label>
+            <div className="control has-icons-left has-icons-right">
+              <input className="input" id="password" type="password" placeholder="Digite sua senha" required />
               <span className="icon is-small is-left">
                 <i className="fas fa-eye"></i>
               </span>
