@@ -17,7 +17,7 @@ const SignPage = () => {
         password: userPassword,
         confirmPassword: userPassword
       })
-      .then((resp) => console.log('conta criada com sucesso'))
+      .then((resp) => console.info(resp))
       .catch((e) => console.error(e));
   }
 
