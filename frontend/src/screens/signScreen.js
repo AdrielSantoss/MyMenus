@@ -17,11 +17,8 @@ const SignPage = () => {
         password: userPassword,
         confirmPassword: userPassword
       })
-      .then((resp) => sign('post', resp.data))
-      .catch((e) => {
-        e = 'erro ao cadastar!';
-        console.log(e);
-      });
+      .then((resp) => console.log('conta criada com sucesso'))
+      .catch((e) => console.error(e));
   }
 
   return (
@@ -61,7 +58,7 @@ const SignPage = () => {
           <div className="field">
             <label className="label has-text-black">Confirme sua senha</label>
             <div className="control has-icons-left has-icons-right">
-              <input className="input" id="password" type="password" placeholder="Digite sua senha" required />
+              <input className="input" id="confirmPassword" type="password" placeholder="Digite sua senha" required />
               <span className="icon is-small is-left">
                 <i className="fas fa-eye"></i>
               </span>
