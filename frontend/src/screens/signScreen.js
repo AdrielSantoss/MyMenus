@@ -1,15 +1,16 @@
 import React, { Fragment } from 'react';
+import sign from '../config/signConfig';
 import './style/sign.css';
 
 const SignPage = () => {
   return (
     <Fragment>
-      <form id="formSign">
+      <form onSubmit={sign}>
         <div id="containerSign">
           <div className="field">
             <label className="label has-text-black">Username</label>
             <div className="control has-icons-left has-icons-right">
-              <input className="input is-success" type="text" placeholder="Username" required />
+              <input className="input is-success" id="username" type="text" placeholder="Username" required />
               <span className="icon is-small is-left">
                 <i className="fas fa-user"></i>
               </span>
@@ -21,7 +22,7 @@ const SignPage = () => {
           <div className="field">
             <label className="label has-text-black">Email</label>
             <div className="control has-icons-left has-icons-right">
-              <input className="input is-dark" type="email" placeholder="Email" required />
+              <input className="input is-dark" id="email" type="email" placeholder="Email" required />
               <span className="icon is-small is-left">
                 <i className="fas fa-envelope"></i>
               </span>
@@ -30,7 +31,7 @@ const SignPage = () => {
           <div className="field">
             <label className="label has-text-black">Password</label>
             <div className="control has-icons-left has-icons-right">
-              <input className="input" type="password" placeholder="Password" required />
+              <input className="input" id="password" type="password" placeholder="Password" required />
               <span className="icon is-small is-left">
                 <i className="fas fa-eye"></i>
               </span>
@@ -56,5 +57,4 @@ const SignPage = () => {
     </Fragment>
   );
 };
-
 export default SignPage;
