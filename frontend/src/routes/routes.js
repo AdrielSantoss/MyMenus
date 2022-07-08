@@ -3,7 +3,7 @@ import Error404 from '../screens/error404';
 import PrincipalPage from '../screens/mainScreen';
 import SignPage from '../screens/signScreen';
 import LoginPage from '../screens/loginScreen';
-import ForgotPage from '../screens/forgotpasswordScreen';
+import ForgotPage from '../screens/forgotPasswordScreen';
 
 const RouterPages = () => {
   return (
